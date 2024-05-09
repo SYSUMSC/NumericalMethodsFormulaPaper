@@ -14,8 +14,24 @@ https://simpletex.cn/
 
 https://wp.007irs.com/s/7kLhn
 
-# PR方法
+# 本地开发指南
 
-在你想写的单元文件夹内改markdown即可
+`fork`本项目，`git clone`到本地
 
-然后发起pr
+`VSCODE`安装`Live Server`插件
+
+![](./live_server.png)
+
+在`text.html`右键选择 Open with live server 即可预览
+
+![](./open.png)
+
+不同数字的文件夹用于不同单元的内容，使用`markdown`+`latex`语法
+
+建议使用`###`作为标题头
+
+使用`latex`需要使用 $行内公式$ 或者 $$单行公式$$，可以借助`simpletex`识别图片导出为`markdown`的`$`格式
+
+开发后可以在网页预览或者在本地markdown编辑器预览
+
+完成后提交 pr 即可合并 https://github.com/xy3xy3/NumericalMethodsFormulaPaper/pulls 
