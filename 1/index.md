@@ -1,12 +1,12 @@
-绝对误差 $E_p = |p - p'|$
+绝对误差 $e_p = |x - x^{*}|$ 
 
-相对误差 $E_r = \left|\frac{p-p'}{p}\right|$
+绝对误差限 $\hat{\epsilon}=\frac{1}{2}\times10^{m-n+1}$ （近似数具有 n 位有效数字）
 
-保证相对误差 $|\bar{p} - p| \leq \varepsilon$
+相对误差 $e_r = \left|\frac{x-x'}{p}\right|$
 
-相对误差限 $\epsilon_r=\frac\epsilon{|\hat{p}|}$
+相对误差限 $\varepsilon_{\mathrm{r}}=\frac{\varepsilon}{\mid x\mid}\geq\frac{\mid x-x^{*}\mid}{\mid x\mid}=\mid e_{\mathrm{r}}\mid $
 
-绝对误差限 $\hat{\epsilon}=1/2\times10^{m-n+1}$ (近似数具有 n 位有效数字)
+条件数 $C_{_p}= \left|\frac{xf'(x)}{f(x)}\right| \approx \left|\frac{f(x)-f(\tilde{x})}{f(x)}\right|/\left|\frac{\Delta x}{x}\right|$
 
 四则运算误差限
 
