@@ -1,30 +1,15 @@
-# 4
-绝对误差 $E_p = |p - p'|$
+### 第四章：数值积分微分
 
-相对误差 $E_r = \left|\frac{p-p'}{p}\right|$
+左矩形公式 $I = \frac{b-a}{n} f(a) $
 
-保证相对误差 $|\bar{p} - p| \leq \varepsilon$
+右矩形公式 $I = \frac{b-a}{n} f(b) $
 
-相对误差限 $\epsilon_r=\frac\epsilon{|\hat{p}|}$
+中点矩形公式 $I = \frac{b-a}{n} f\left(\frac{a+b}{2}\right) $
 
-绝对误差限 $\hat{\epsilon}=1/2\times10^{m-n+1}$ (近似数具有 n 位有效数字)
+梯形公式 $I = \frac{b-a}{n} \left(\frac{f(a) + f(b)}{2} + \sum_{k=1}^{n-1}f(a+k\cdot h)\right), \quad h=\frac{b-a}{n} $
 
-四则运算误差限
+辛普森公式（Simpson） $I = \frac{b-a}{n} \left(\frac{f(a) + 4f\left(\frac{a+b}{2}\right) + f(b)}{6}\right), \quad n \text{ 为偶数} $
 
-$\epsilon(\hat{p_1}+\hat{p_2})<=\epsilon(\hat{p_1})+\epsilon(\hat{p_2})$
+牛顿-柯斯特公式
 
-$\epsilon(\hat{p_1}\hat{p_2})\approx|\hat{p_1}|\epsilon(\hat{p_2})+|\hat{p_2}|\epsilon(\hat{p_1})$
-
-$\epsilon(\frac{\hat{p_1}}{\hat{p_2}})\approx\frac{|\hat{p_1}|\epsilon(\hat{p_2})+|\hat{p_2}|\epsilon(\hat{p_1})}{|\hat{p_2}|^2}$
-
-函数误差限
-
-$\epsilon(f(\hat{p}))\approx|f\prime(\hat{p})|\epsilon(\hat{p})$
-
-有效数字与相对误差限关系：
-
-$\text{近似数}\hat{p}=\pm10^m\times(a_1+a_2\times10^{-1}+\ldots+a_i\times10^{-(i-1)})\text{,设}\hat{p}\text{有n位有效数字,则其相对误差限:}$
-
-$|\frac{p-\hat{p}}p|<=\epsilon_r<=\frac{10^{1-n}}{2a_1}\$
-
-$\text{Horner's Method(秦九韶算法)}\quad P_n(x):=\sum_{i=0}^na_ix^i,b_n:=a_n,b_k=a_k+cb_{k+1}\Rightarrow b_0=P(c)$
+$I_{n}=(b-a)\sum_{k=0}^{n}\mathbf{C}_{k}^{(n)}f(x_{k}),\quad\mathbf{C}_{k}^{(n)}=\frac{h}{b-a}\int_{0}^{n}\prod_{j=0}^{n}\frac{t-j}{k-j}\mathbf{d}t=\frac{\left(-1\right)^{n-k}}{nk!(n-k)!}\int_{0}^{n}\prod_{j=0}^{n}(t-j)\mathbf{d}t. $
