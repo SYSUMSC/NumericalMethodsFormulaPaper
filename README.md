@@ -1,6 +1,8 @@
 # 介绍
 
-用于数值计算课程的公式纸，由于不会latex，于是用html+css实现分栏，读取markdown合并，再用浏览器的打印功能导出A3即可
+用于数值计算课程的公式纸，由于本人不会latex，于是用html+css实现分栏，读取markdown合并，再用浏览器的打印功能导出A3即可
+
+在线预览网页：https://nmfp.skyw.cc/test.html
 
 # 辅助工具
 
