@@ -51,7 +51,7 @@ $f[x_0, x_1, \dots, x_n]=\displaystyle \frac{f^{(n)}(\xi)}{n!},\xi\in[a, b] $
 
 **泰勒插值多项式**： $P_n(x)=\displaystyle f(x_0)+f'(x_0)(x-x_0)+\dots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n $
 
-余项： $R_n(x)=\displaystyle \frac {f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}, \xi\in(a, b) $，也与之前余项在 $x_i\rightarrow x_0 $时的结果一致。
+余项： $R_n(x)=\displaystyle \frac {f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}, \xi\in(a, b) $，也与之前余项在 $x_i\rightarrow x_0 $ 时的结果一致。
 
 **三次埃尔米特插值多项式**：
 
@@ -61,7 +61,7 @@ $f[x_0, x_1, \dots, x_n]=\displaystyle \frac{f^{(n)}(\xi)}{n!},\xi\in[a, b] $
 
 其中 $A=\displaystyle \frac{f'(x_1)-f[x_0,x_1]-(x_1-x_0)f[x_0,x_1,x_2]}{(x_1-x_0)(x_1-x_2)} $
 
-余项： $R(x)=\displaystyle \frac{1}{4!}f^{(4)}(\xi)(x-x_0)(x-x_1)^2(x-x_2) $， $\xi $在 $x_0, x_1, x_2 $限定的范围内
+余项： $R(x)=\displaystyle \frac{1}{4!}f^{(4)}(\xi)(x-x_0)(x-x_1)^2(x-x_2)$，$\xi$ 在 $x_0, x_1, x_2$ 限定的范围内
 
 **分段线性插值**： $I_h(x)=\displaystyle \frac{x-x_{k+1}}{x_k-x_{k+1}}f(x_k)+\frac{x-x_k}{x_{k+1}-x_k}f(x_{k+1}) $, 其中 $x_k\leqslant x\leqslant x_{k+1}, k=0, 1,\dots, n-1 $
 
