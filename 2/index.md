@@ -19,6 +19,8 @@ f(x_0) \\ f(x_1) \\ f(x_2) \\ \vdots \\ f(x_n)
 \end{bmatrix}
 $$
 
+$x_i$互异 -> $\mathrm{det}\boldsymbol{A}\not=0$ -> 线性方程解唯一 -> $P(x)$存在则唯一
+
 **拉格朗日插值**： $L_n(x)=\displaystyle \sum_{k=0}^{n}y_kl_k(x) $
 
 其中 $l_k(x)=\displaystyle \frac{\omega_{n+1}(x)}{(x-x_k)\omega_{n+1}'(x_k)} $
@@ -27,7 +29,9 @@ $\omega_{n+1}(x)=(x-x_0)(x-x_1)\dots(x-x_n) $
 
 $\omega_{n+1}^{'}(x_k)=(x_k-x_0)(x_k-x_1)\dots(x_k-x_{k-1})(x_k-x_{k+1})\dots(x_k-x_n) $
 
-余项： $R_n(x)=\displaystyle \frac{f^{(n+1)}(\xi)}{(n+1)!}\omega_{n+1}(x),\xi \in (a, b) $
+余项： $R_n(x)=\displaystyle \frac{f^{(n+1)}(\xi)}{(n+1)!}\omega_{n+1}(x),\xi \in (a, b) $​
+
+截断误差限：$|R_n(x)|\le \frac{M_{n+1}}{(n+1)!}|\omega_{n+1}(x)|$, 其中$M_{n+1}=\max_{a \leq x \leq b} \left| f^{(n+1)}(x) \right|$
 
 **一阶均差**： $f[x_0, x_1]=\displaystyle \frac{f(x_1)-f(x_0)}{x_1-x_0} $
 
