@@ -40,6 +40,10 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
 余项： $R_{n}[f]=\displaystyle -\frac{b-a}{180}\biggl(\frac{h}{2}\biggr)^{4}f^{(4)}(\eta),\eta\in(a,b)$
 
+**高斯-勒让德公式** $I=\int_a^b\rho(x)f(x)\mathrm{d}x\approx\sum_{k=0}^nA_kf(x_k),$
+
+$\begin{array}{l|c|c}\hline n&x_k&A_k\\\hline0&0.0000000&2.0000000\\\hline1&\pm0.5773503&1.0000000\\\hline&\pm0.7745967&0.5555556\\2&0.0000000&0.8888889\\\hline3&\pm0.8611363&0.3478548\\&\pm0.3399810&0.6521452\\\hline&\pm0.9061798&0.2369269\\4&\pm0.5384693&0.4786287\\&0.0000000&0.5688889\end{array}$
+
 **递推型梯形公式** $T_{2n}=\displaystyle \frac{1}{2}T_{n}+\frac{h}{2}\sum_{k=0}^{n-1}f(x_{k+\frac{1}{2}})$
 
 进一步可定义 $S_n=\displaystyle \frac{4T_{2n}-T_n}{4-1}, C_n=\displaystyle \frac{4^2S_{2n}-S_n}{4^2-1}$
