@@ -20,8 +20,7 @@ $C_p\geqslant 10$ 就认为问题是病态的
 
 **函数误差限** $\varepsilon(f(\hat{p}))\approx|f'(\hat{p})|\varepsilon(\hat{p}) $
 
-若近似数有 $n$ 位有效数字，
-则可以写为 $\hat{p}=\pm10^m\times(a_1+a_2\times10^{-1}+\ldots+a_i\times10^{-(n-1)})$ 
+若近似数有 $n$ 位有效数字，则可以写为 $\hat{p}=\pm10^m\times(a_1+a_2\times10^{-1}+\ldots+a_i\times10^{-(n-1)})$ 
 
 其绝对误差限为 $|x-x^*|\leqslant\displaystyle \frac{1}{2}\times10^{m-n+1} $
 
