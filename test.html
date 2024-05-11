@@ -27,6 +27,30 @@
         margin-left: 5px;
         margin-right: 5px;
       }
+
+      table {
+          width: 100%; /* 表格宽度为100% */
+          border-collapse: collapse; /* 边框合并 */
+          margin-bottom: 20px; /* 下方留出空间 */
+      }
+
+      th, td {
+          border: 1px solid #ccc; /* 单元格边框颜色 */
+          padding: 8px; /* 内填充 */
+          text-align: left; /* 文字左对齐 */
+          font-size: 16px; /* 字体大小 */
+      }
+
+      th {
+          background-color: #f4f4f4; /* 表头背景色 */
+          font-weight: bold; /* 表头加粗 */
+      }
+
+      tr:nth-child(even) {
+          background-color: #f9f9f9; /* 斑马线，改了偶数 */
+      }
+
+
     </style>
   </head>
   <body>
