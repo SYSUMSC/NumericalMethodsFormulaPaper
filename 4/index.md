@@ -40,23 +40,6 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
 余项： $R_{n}[f]=\displaystyle -\frac{b-a}{180}\biggl(\frac{h}{2}\biggr)^{4}f^{(4)}(\eta),\eta\in(a,b)$
 
-**高斯-勒让德公式** $\int_{-1}^{1}f(x)\mathrm{d}x\approx\sum_{k=0}^{n}A_{k}f(x_{k}).$
-
-| n | $x_k$     | $A_k$       |
-|---|-------------|---------------|
-| 0 | $0.000000$ | $2.000000$ |
-| 1 | $\pm0.5773503$ | $1.000000$ |
-| 2 | $\pm0.7745967$ | $0.5555556$ |
-|   | $0.000000$ | $0.8888889$ |
-| 3 | $\pm0.8611363$ | $0.3478548$ |
-|   | $\pm0.3399810$ | $0.6521452$ |
-| 4 | $\pm0.9061798$ | $0.2369269$ |
-|   | $\pm0.5384693$ | $0.4786287$ |
-|   | $0.000000$ | $0.5688889$ |
-| 5 | $\pm0.9324695$ | $0.1713245$ |
-|   | $\pm0.6612094$ | $0.3607616$ |
-|   | $\pm0.2386192$ | $0.4679139$ |
-
 **递推型梯形公式** $T_{2n}=\displaystyle \frac{1}{2}T_{n}+\frac{h}{2}\sum_{k=0}^{n-1}f(x_{k+\frac{1}{2}})$
 
 进一步可定义 $S_n=\displaystyle \frac{4T_{2n}-T_n}{4-1}, C_n=\displaystyle \frac{4^2S_{2n}-S_n}{4^2-1}$
@@ -64,6 +47,12 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 **龙贝格求积公式** $R_n=\displaystyle \frac{4^3C_{2n}-C_n}{4^3-1}$
 
 有 $\displaystyle \lim_{n\rightarrow \infin} T_n, S_n, C_n, R_n=I$，收敛速度从左到右依次加快
+
+**高斯-勒让德求积公式** $\displaystyle \int_{-1}^{1}1*f(x)\mathrm{d}x\approx\sum_{k=0}^{n}A_{k}f(x_{k}).$ 其中 $x_k$ 为勒让德多项式的零点
+
+**高斯-拉盖尔求积公式** $\displaystyle \int_{0}^{\infin}e^{-x}*f(x)\mathrm{d}x\approx\sum_{k=0}^{n}A_{k}f(x_{k}).$ 其中 $x_k$ 为拉盖尔多项式的零点
+
+**高斯-赫尔米特求积公式** $\displaystyle \int_{-\infin}^{\infin}e^{-x^2}*f(x)\mathrm{d}x\approx\sum_{k=0}^{n}A_{k}f(x_{k}).$ 其中 $x_k$ 为赫尔米特多项式的零点
 
 #### **数值微分**
 

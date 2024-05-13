@@ -31,7 +31,7 @@ $\omega_{n+1}^{'}(x_k)=(x_k-x_0)(x_k-x_1)\dots(x_k-x_{k-1})(x_k-x_{k+1})\dots(x_
 
 余项： $R_n(x)=\displaystyle \frac{f^{(n+1)}(\xi)}{(n+1)!}\omega_{n+1}(x),\xi \in (a, b) $
 
-截断误差限： $|R_n(x)|\le \frac{M_{n+1}}{(n+1)!}|\omega_{n+1}(x)|$ , 其中 $M_{n+1}=\max_{a \leq x \leq b} \left| f^{(n+1)}(x) \right|$
+截断误差限： $\displaystyle |R_n(x)|\le \frac{M_{n+1}}{(n+1)!}|\omega_{n+1}(x)|$ , 其中 $\displaystyle M_{n+1}=\max_{a \leq x \leq b} \left| f^{(n+1)}(x) \right|$
 
 **一阶均差**： $f[x_0, x_1]=\displaystyle \frac{f(x_1)-f(x_0)}{x_1-x_0} $
 
