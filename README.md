@@ -4,6 +4,10 @@
 
 在线预览网页：https://nmfp.skyw.cc/test.html
 
+误入：关注MSC喵，谢谢喵
+
+https://www.sysumsc.cn/
+
 ## 后期如何调整打印到双面A3?
 
 目前想法是先完成所有笔记，再调整每栏放什么，具体可参考`bootstarp栅格系统`
