@@ -28,14 +28,12 @@ $$
 $$
 
 #### 矩阵范数
+行范数 $\left\|A\right\|_{\infty}=\max_{1\leq i\leq n}\sum_{j=1}^{n}\left|a_{ij}\right|$
 
-$$
-\begin{aligned}
-&\left\|A\right\|_{\infty}=\max_{1\leq i\leq n}\sum_{j=1}^{n}\left|a_{ij}\right| \\
-&\left\|A\right\|_1=\max_{1\leq j\leq n}\sum_{i=1}^n\left|a_{ij}\right| \\
-&\left\|A\right\|_{2}=\sqrt{\lambda_{\max}\left(A^{\mathrm{T}}A\right)} \\
-&\left\|A\right\|_{\mathrm{F}}=\sqrt{\sum_{i,j=1}^{n}a_{ij}^{2}}
-\end{aligned}
-$$
+列范数 $\left\|A\right\|_1=\max_{1\leq j\leq n}\sum_{i=1}^n\left|a_{ij}\right|$
+
+2范数（谱范数） $\left\|A\right\|_{2}=\sqrt{\lambda_{\max}\left(A^{\mathrm{T}}A\right)}$  ( $\lambda_{\max}$ 表示最大特征值)
+
+F-范数 $\left\|A\right\|_{\mathrm{F}}=\sqrt{\sum_{i,j=1}^{n}a_{ij}^{2}}$
 
 **谱半径**  $\rho(A)=\max_{1\leq i\leq n}\left|\lambda_i\right|$
