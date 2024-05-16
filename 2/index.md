@@ -43,7 +43,7 @@ $f[x_0,x_1, \dots, x_k]=\displaystyle \sum_{j=0}^{k}\frac{f(x_j)}{(x_j-x_0)\dots
 
 $f[x_0, x_1, \dots, x_n]=\displaystyle \frac{f^{(n)}(\xi)}{n!},\xi\in[a, b] $
 
-**牛顿插值公式**： $N_n(x)=a_0+a_1(x-x_0)+a_2(x-x_0)(x-x_1)+\dots+a_n(x-x_0)\dots(x-x_n) $
+**牛顿插值公式**： $N_n(x)=a_0+a_1(x-x_0)+a_2(x-x_0)(x-x_1)+\dots+a_n(x-x_0)\dots(x-x_{n-1}) $
 
 其中 $a_i=f[x_0, x_1, \dots, x_i] $
 
