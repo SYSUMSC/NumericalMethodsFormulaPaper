@@ -4,33 +4,11 @@
 
 在线预览网页：https://nmfp.skyw.cc/test.html
 
-误入：关注MSC喵，谢谢喵
+## DDL
 
-https://www.sysumsc.cn/
+15周6月3号
 
-## 后期如何调整打印到双面A3?
-
-目前想法是先完成所有笔记，再调整每栏放什么，具体可参考`bootstarp栅格系统`
-
-使用edge浏览器打印功能，可以选择每页打印多少，是可以压到两页的，具体美观方面可能要先网页调整栏数
-
-![](./img/print.png)
-
-如果后期没办法通过调整css实现（个人感觉是可以），再考虑用PPT粘贴图片或者doc等办法
-
-# 辅助工具
-
-图片转latex
-
-https://simpletex.cn/
-
-# pdf资源下载
-
-用于识别出latex公式
-
-https://wp.007irs.com/s/7kLhn
-
-# 本地开发指南
+## 本地开发指南
 
 `fork`本项目，`git clone`到本地
 
@@ -61,3 +39,30 @@ https://wp.007irs.com/s/7kLhn
 开发后可以在网页预览或者在本地markdown编辑器预览
 
 完成后提交 pr 即可合并 https://github.com/xy3xy3/NumericalMethodsFormulaPaper/pulls 
+
+## 后期如何调整打印到双面A3?
+
+目前想法是先完成所有笔记，再调整每栏放什么，具体可参考`bootstarp栅格系统`
+
+使用edge浏览器打印功能，可以选择每页打印多少，是可以压到两页的，具体美观方面可能要先网页调整栏数
+
+![](./img/print.png)
+
+如果后期没办法通过调整css实现（个人感觉是可以），再考虑用PPT粘贴图片或者doc等办法
+
+
+误入：关注MSC喵，谢谢喵
+
+https://www.sysumsc.cn/
+
+# 辅助工具
+
+## 图片转latex
+
+https://simpletex.cn/
+
+## pdf资源下载
+
+用于识别出latex公式
+
+https://wp.007irs.com/s/7kLhn
