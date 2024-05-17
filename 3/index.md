@@ -9,11 +9,11 @@
 
 就称 $\Vert\cdot\Vert$ 是线性空间 $S$ 上的范数， $S$ 与 $\Vert\cdot \Vert$ 一起称为**赋范线性空间**，记为 $X$ 
 
-对于$\mathsf{R}^n$上的向量$x=(x_1,\cdots,x_n)^T$，三种常用范数：
+对于 $\mathsf{R}^n$ 上的向量 $x=(x_1,\cdots,x_n)^T$ ，三种常用范数：
 
-**无穷范数**： $\Vert \mathbf{x} \Vert_\infin=\displaystyle \max_{1\leqslant i\leqslant n}|x_i|$​ 
+**无穷范数** $\Vert \mathbf{x} \Vert_\infin=\displaystyle \max_{1\leqslant i\leqslant n}|x_i|$ 
 
-**1-范数**： $\Vert \mathbf{x} \Vert_1=\displaystyle \sum_{i=1}^n|x_i|$ 
+**1-范数** $\Vert \mathbf{x} \Vert_1=\displaystyle \sum_{i=1}^n|x_i|$ 
 
 **2-范数**： $\Vert \mathbf{x} \Vert_2=\displaystyle \sqrt{\sum_{i=1}^n x_i^2}$ 
 
