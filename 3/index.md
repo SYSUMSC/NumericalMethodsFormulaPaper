@@ -1,6 +1,6 @@
 ### **第三章 逼近与拟合**
 
-**范数**：设 $S$ 是实数域上的线性空间， $x\in S$ ，若果存在值域为实数域的函数 $\Vert\cdot\Vert$ ，满足：
+**范数**：设 $S$ 是实数域上的线性空间， $x\in S$ ，如果存在值域为实数域的函数 $\Vert\cdot\Vert$ ，满足：
 
 - 正定性： $\Vert x\Vert\geqslant0$ ； $\Vert x \Vert=0$ 当且仅当 $x=0$ 
 - 齐次性： $\Vert \alpha x \Vert=\lvert \alpha\rvert\Vert x\Vert, \alpha\in R$ 
@@ -9,7 +9,9 @@
 
 就称 $\Vert\cdot\Vert$ 是线性空间 $S$ 上的范数， $S$ 与 $\Vert\cdot \Vert$ 一起称为**赋范线性空间**，记为 $X$ 
 
-**无穷范数**： $\Vert \mathbf{x} \Vert_\infin=\displaystyle \max_{1\leqslant i\leqslant n}|x_i|$ 
+对于$\mathsf{R}^n$上的向量$x=(x_1,\cdots,x_n)^T$，三种常用范数：
+
+**无穷范数**： $\Vert \mathbf{x} \Vert_\infin=\displaystyle \max_{1\leqslant i\leqslant n}|x_i|$​ 
 
 **1-范数**： $\Vert \mathbf{x} \Vert_1=\displaystyle \sum_{i=1}^n|x_i|$ 
 
@@ -126,7 +128,7 @@ $$
 \begin{align*}
 &Legendre 多项式,t\in [-1, 1],\rho(t)=1 \\
 &P_0(t)=1, P_1(t)=t, (k+1)P_{k+1}(t)=(2k+1) tP_k(t)-kP_{k-1}(t) \\
-&区域为[a,b]时： \\
+&积分区域为[a,b]时： \\
 &<\tilde{P}_{k}(t),\tilde{P}_{k}(t)>=\displaystyle \left(\frac{b-a}{2}\right)·\displaystyle \left(\frac{2}{2k+1}\right) \\
 &\tilde{P}_{k}(s)=P_{k}\displaystyle \left(\frac{2s-(a+b)}{b-a}\right) \\
 \\
