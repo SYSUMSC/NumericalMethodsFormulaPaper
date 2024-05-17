@@ -31,4 +31,4 @@ $C_p\geqslant 10$ 就认为问题是病态的
 
 $P_n(x)=\displaystyle\sum_{i=0}^na_ix^i$ ，求 $P(x_0)$ 只需求 $b_n$ 
 
-其中 $ b_0=a_0,b_k=a_k+b_{k-1}x_0 $
+其中 $ b_0=a_0,b_k=a_k+b_{k-1}x $
