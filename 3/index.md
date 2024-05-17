@@ -126,6 +126,9 @@ $$
 \begin{align*}
 &Legendre 多项式,t\in [-1, 1],\rho(t)=1 \\
 &P_0(t)=1, P_1(t)=t, (k+1)P_{k+1}(t)=(2k+1) tP_k(t)-kP_{k-1}(t) \\
+&区域为[a,b]时： \\
+&<\tilde{P}_{k}(t),\tilde{P}_{k}(t)>=\displaystyle \left(\frac{b-a}{2}\right)·\displaystyle \left(\frac{2}{2k+1}\right) \\
+&\tilde{P}_{k}(s)=P_{k}\displaystyle \left(\frac{2s-(a+b)}{b-a}\right) \\
 \\
 &Chebyshev多项式1,t\in [-1, 1],\rho(t)=\frac{1}{\sqrt{1-t^2}}\\
 &P_0(t)=1, P_1(t)=t,P_{k+1}(t)=2tP_k(t)-P_{k-1}(t)\\
@@ -141,4 +144,4 @@ $$
 \end{align*}
 $$
 
-如果拟合的时候，用的是正交多项式 $\{p_i(x)\}$ ，可以直接写出最佳平方逼近函数 $S^*(x)=\displaystyle \sum_{k=0}^{n}\frac{(f(x), p_k(x))}{(p_k(x), p_k(x))}p_k(x)$ 
+如果拟合的时候，用的是正交多项式 $\{p_i(x)\}$ ，可以直接写出最佳平方逼近函数 $S^*(x)=\displaystyle \sum_{k=0}^{n}\frac{<f(x), p_k(x)>}{<p_k(x), p_k(x)>}p_k(x)$，注意此时的积分区域为定义域，非定义域需做出相应变换
