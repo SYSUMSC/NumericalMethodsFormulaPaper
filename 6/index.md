@@ -1,49 +1,46 @@
-### **第六章 解线性代数方程组的迭代法**
-**迭代法及其收敛性**
+### **第六章 线性方程组**
 
-- $x=B_0x+f$
-- $x^{k+1}=B_0x^{k}+f$
+**定常迭代法**
 
-**雅可比迭代**
+对于线性方程组 $\mathbf{Ax+b=0}$ （ $\mathbf{A}$ 是非奇异矩阵 ），对 $\mathbf{A}$ 进行矩阵分裂： $\mathbf{A=M-N}$，其中 $\mathbf{M}$ 是可选择的非奇异矩阵
 
-$\sum_{j=0}^{n}a_{ij}x_j=b_i$
+于是得到迭代式 $\mathbf{x=M^{-1}Nx+M^{-1}b=Bx+f}\Rightarrow \mathbf{x^{(k+1)}=Bx^{(k)}+f}$
 
-$Ax=b$，A为非奇异阵且$a_{ij}≠0$，将A分裂为$A=D-L-U$
+**一阶线性定常迭代法**
+取 $\mathbf{M=I}$ 时，若 $\rho(\mathbf{B})<1$ ，则对任意初始向量 $\mathbf{x^{(0)}}=(x_1^{(0)}, x_2^{(0)}, \dots, x_n^{(0)})^T$，会收敛到真实解
 
-$x_i=\frac{1}{a_ii}(b_i-\sum_{j=1,j≠i}^{n}a_{ij}x_j)$ 
+**雅可比迭代法**
 
-简记为 $x=B_0x+f$
+采用矩阵分裂：$\mathbf{A=M-N=D-(L+U)}$
 
-其中 $B_0=D^{-1}(L+U)，f=D^{-1}b$
+则 $\mathbf{x^{(k+1)}=D^{-1}(L+U)x^{(k)}+D^{-1}b=B_J x+f}$
 
-雅可比迭代公式
-
-$x^{(0)}=\left(x_{1}^{(0)},x_{2}^{(0)},...,x_{n}^{(0)}\right)^{T}$
-
-$x^{k+1}=\frac{1}{a_{ii}}\Bigg(b_{i}-\sum_{(i=1)}^{n}a_{ij}x_{j}^{(k)}\Bigg)$
-
-
-高斯-赛格尔迭代
-
-$x^0$同上
-
-$\mathrm{x}_{\mathrm{i}}^{(k+1)}=\frac{1}{a_{ii}}\Bigg(b_{i}-\sum_{(j=1)}^{i-1}a_{ij}x_{j}^{(k+1)}-\sum_{(j=i+1)}^{n}a_{ij}x_{j}^{(k)}\Bigg)(\mathrm{k}=0,1,2,...;\mathrm{i}=1,2,...,\mathrm{n})$
-
-或改写为
+$\mathbf{x^{(k+1)}}$ 可由以下公式得到：
 
 $$
-\begin{aligned}&\begin{cases}x^{(k+1)}=x_i^{(k)}+\Delta x_i\big(k=0,1,2,...;i=1,2,...,n\big),\\\Delta x_i=\frac{1}{a_{ii}}\Big(b_i-\sum_{(j=1)}^{i-1}a_{ij}x_i^{(k+1)}-\sum_{(j=i)}^{n}a_{ij}x_j^{(k)}\Big).\end{cases}\end{aligned}
+x^{(k+1)}_i=\frac{1}{a_{ii}}\Bigg(b_{i}-\sum_{j=1, j\neq i}^{n}a_{ij}x_{j}^{(k)}\Bigg)
 $$
 
+**高斯-赛格尔迭代法**
+
+采用矩阵分裂： $\mathbf{A=M-N=(D-L)-U}$
+
+则 $\mathbf{Dx^{(k+1)}=Lx^{(k+1)}+Ux^{(k)}+b}$
+
+$\mathbf{x^{(k+1)}}$ 可由以下公式得到：
+
 $$
-\begin{gathered}
-\mathrm{x}^{(\mathrm{k}+1)}=Gx^{(k)}+f, \\
-\mathrm{G=(D-L)^{-1}}U,F=(D-L)^{-1}b. 
-\end{gathered}
+x_i^{(k+1)}=\frac{-1}{a_{ii}}(\sum_{j=1}^{i-1}a_{ij}x_j^{(k+1)}+\sum_{j=i+1}^{n}a_{ij}x_j^{(k)}-b_i)
 $$
 
-逐次超松驰(SOR)迭代法
+**逐次超松驰迭代法（SOR）**
+
+引入松弛因子 $\omega, \omega>0$ 采用矩阵分裂： $\displaystyle \mathbf{A=M-N}=\frac 1 \omega(\mathbf{D}-\omega\mathbf{L})-\frac 1 \omega[(1-\omega)\mathbf{D}+\omega\mathbf{U}]$
+
+则 $\mathbf{Dx^{(k+1)}=Dx^{(k)}}+\omega\mathbf{(b+Lx^{(k+1)}+Ux^{(k)}-Dx^{(k)})}$
+
+$\mathbf{x^{(k+1)}}$ 可由以下公式得到：
 
 $$
-\begin{cases}x^{(0)}=(x_1^{(0)},\cdots,x_n^{(0)})^\mathrm{T},\\x_i^{(k+1)}=x_i^{(k)}+\omega\Bigg(b_i-\sum_{j=1}^{i-1}a_{ij}x_j^{(k+1)}-\sum_{j=i}^na_{ij}x_j^{(k)}\Bigg)/a_{ii},\\(i=1,2,\cdots,n),\\\text{松弛因子 }\omega>0.\end{cases}
+x_i^{(k+1)}=x_i^{(k)}+\frac{-1}{a_{ii}}(\sum_{j=1}^{i-1}a_{ij}x_j^{(k+1)}+\sum_{j=i+1}^{n}a_{ij}x_j^{(k)}-b_i)
 $$
