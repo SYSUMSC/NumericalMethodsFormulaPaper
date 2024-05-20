@@ -6,12 +6,18 @@
 
 **雅可比迭代**
 
-$ \sum_{j=0}^{n}a_{ij}x_j=b_i$
+$\sum_{j=0}^{n}a_{ij}x_j=b_i$
 
-$ Ax=b，A为非奇异阵且a_{ij}≠0，将A分裂为A=D-L-U$
+$Ax=b$，A为非奇异阵且$a_{ij}≠0$，将A分裂为$A=D-L-U$
 
-$ x_i=\frac{1}{a_ii}(b_i-\sum_{j=1,j≠i}^{n}a_{ij}x_j)$ 
+$x_i=\frac{1}{a_ii}(b_i-\sum_{j=1,j≠i}^{n}a_{ij}x_j)$ 
 
-$ 简记为x=B_0x+f$
+简记为$x=B_0x+f$
 
-$ 其中B_0=D^{-1}(L+U)，f=D^{-1}b$
+其中$B_0=D^{-1}(L+U)，f=D^{-1}b$
+
+雅可比迭代公式
+
+$x^{(0)}=\left(x_{1}^{(0)},x_{2}^{(0)},...,x_{n}^{(0)}\right)^{T}$
+
+$x^{k+1}=\frac{1}{a_{ii}}\Bigg(b_{i}-\sum_{(i=1)}^{n}a_{ij}x_{j}^{(k)}\Bigg)$
