@@ -1,4 +1,4 @@
-### **常微分方程初值问题的数值解法**
+### **第九章 常微分方程初值问题的数值解法**
 
 $$
 \begin{aligned}&\text{利普希兹条件}|f(x,y_1)-f(x,y_2)|\leq|y_1-y_2|,L>0\\&\text{前向欧拉法:}\frac{y_{n+1}-y_n}{x_{n+1}-x_n}=f(x_n,y_n),\text{即}y_{n+1}=y_n+hf(x_n,y_n)\\&\text{后向欧拉法:}\frac{y_{n+1}-y_n}{x_{n+1}-x_n}=f(x_{n+1},y_{n+1}),\text{即}y_{n+1}=y_n+hf(x_{n+1},y_{n+1})\\&\text{梯形方法:}y_{n+1}=y_n+\frac h2[f(x_n,y_n)+f(x_{n+1},y_{n+1})]\end{aligned}
