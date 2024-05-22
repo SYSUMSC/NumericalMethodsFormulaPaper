@@ -1,4 +1,4 @@
-### **第五章 解线性方程组直接方法**
+### **第五章 线性方程组——直接法**
 
 **高斯消元法**：通过基本变换，将增广矩阵转化为阶梯型矩阵：
 
@@ -51,12 +51,22 @@ $$
 
 Cholesky 分解后，类似 LU 分解的过程得到最终解
 
-**矩阵的 1-范数**：又称列范数，每一列中元素的绝对值之和的最大值 $\Vert \mathbf{A}\Vert_{1}=\displaystyle \max_{1\leqslant j\leqslant n}\left\{\sum_{i=1}^n|a_{ij}|\right\}$
+**矩阵范数**：如果矩阵 $\mathbf{A}\in R^{n\times n}$ 与某个非负的实值函数 $N(\mathbf{A})=\Vert\mathbf{A}\Vert$ 满足正定性、齐次性、三角不等式以及相容性，则称 $N(\mathbf{A})$ 是一个矩阵范数
 
-**矩阵的 2-范数**：又称谱范数 $\Vert\mathbf{A}\Vert_2=\displaystyle \sqrt{\lambda_{max}}$，其中 $\lambda_{max}$ 是矩阵 $\mathbf{A^T A}$ 最大特征值
+**相容性**：$\Vert \mathbf{Ax}\Vert\leqslant \Vert \mathbf{A}\Vert \Vert \mathbf{x}\Vert$。其中 $\Vert \mathbf{A}\Vert$ 矩阵范数， $\Vert \mathbf{Ax}\Vert, \Vert \mathbf{x}\Vert$ 是向量范数。只有满足这个不等式，才说这个矩阵范数和这个向量范数是相容的。
 
-**矩阵的无穷范数**：又称行范数，每一行中元素的绝对值之和的最大值 $\Vert \mathbf{A}\Vert_{\infin}=\displaystyle \max_{1\leqslant i\leqslant n}\left\{\sum_{j=1}^n|a_{ij}|\right\}$
+**算子范数（从属矩阵范数）**：$\Vert \mathbf{A}\Vert =\displaystyle \max_{\Vert \mathbf{x}\Vert=1}\{\Vert\mathbf{Ax}\Vert\}=\max_{\mathbf{x\neq 0}}\frac{\Vert \mathbf{Ax\Vert}}{\Vert \mathbf{x} \Vert}$ ，其中 $\Vert\mathbf{Ax}\Vert$ 是某个向量范数。算子范数度量了矩阵 $\mathbf{A}$ 将向量 $\mathbf{x}$ 映射到新向量 $\mathbf{Ax}$ 的"放大"程度。
 
-**矩阵的F-范数**：$\Vert \mathbf{A}\Vert_F=\displaystyle \sqrt{\sum_{i=1}^n\sum_{j=1}^n a_{ij}^2}$
+由不同的向量范数可以导出不同的算子范数：
+
+- **1-范数**：又称列范数，每一列中元素的绝对值之和的最大值 $\Vert \mathbf{A}\Vert_{1}=\displaystyle \max_{1\leqslant j\leqslant n}\left\{\sum_{i=1}^n|a_{ij}|\right\}$
+
+- **2-范数**：又称谱范数 $\Vert\mathbf{A}\Vert_2=\displaystyle \sqrt{\lambda_{max}}$，其中 $\lambda_{max}$ 是矩阵 $\mathbf{A^T A}$ 最大特征值
+
+- **无穷范数**：又称行范数，每一行中元素的绝对值之和的最大值 $\Vert \mathbf{A}\Vert_{\infin}=\displaystyle \max_{1\leqslant i\leqslant n}\left\{\sum_{j=1}^n|a_{ij}|\right\}$
+
+其他种类的范数：
+
+- **F-范数**：$\Vert \mathbf{A}\Vert_F=\displaystyle \sqrt{\sum_{i=1}^n\sum_{j=1}^n a_{ij}^2}$
 
 **谱半径** $\rho(\mathbf{A})=\max|\lambda_i|$，对矩阵的任何一种相容范数都有 $\rho(\mathbf{A})\leqslant \Vert \mathbf{A} \Vert$
