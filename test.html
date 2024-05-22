@@ -63,7 +63,7 @@
             <div class="formula p-1" id="formula2"></div>
             <div class="formula p-1" id="formula4"></div>
             <div class="formula p-1" id="formula7"></div>
-            <div class="formula p-1" id="formula8"></div>
+            <!-- <div class="formula p-1" id="formula8"></div> -->
           </div>
         </div>
         <div class="col-6">
@@ -97,6 +97,7 @@
       }
 
       for (let i = 1; i <= 9; i++) {
+        if (i==8) continue
         fetchAndInsertFormula(`formula${i}`, `./${i}/index.md`);
       }
     </script>
