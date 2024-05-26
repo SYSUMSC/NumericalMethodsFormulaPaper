@@ -67,6 +67,14 @@ $f[x_0, x_1, \dots, x_n]=\displaystyle \frac{f^{(n)}(\xi)}{n!},\xi\in[a, b] $
 
 余项： $R(x)=\displaystyle \frac{1}{4!}f^{(4)}(\xi)(x-x_0)(x-x_1)^2(x-x_2)$，$\xi$ 在 $x_0, x_1, x_2$ 限定的范围内
 
+**两点三次埃尔米特插值多项式**
+
+已知 $f(x_0), f(x_1), f'(x_0), f'(x_1) $
+
+则 $P(x)=\displaystyle \left(1+2\frac{x-x_0}{x_1-x_0}\right)\left(\frac{x-x_1}{x_0-x_1}\right)^2f(x_0)+ \left(1+2\frac{x-x_1}{x_0-x_1}\right)\left(\frac{x-x_0}{x_1-x_0}\right)^2f(x_1)+(x-x_0)\left(\frac{x-x_1}{x_0-x_1}\right)^2f'(x_0)+(x-x_1)\left(\frac{x-x_0}{x_1-x_0}\right)^2f'(x_1) $
+
+余项： $R(x)=\displaystyle \frac{1}{4!}f^{(4)}(\xi)(x-x_0)^2(x-x_1)^2, \xi\in(x_0, x_1)$
+
 **分段线性插值**： $I_h(x)=\displaystyle \frac{x-x_{k+1}}{x_k-x_{k+1}}f(x_k)+\frac{x-x_k}{x_{k+1}-x_k}f(x_{k+1}) $, 其中 $x_k\leqslant x\leqslant x_{k+1}, k=0, 1,\dots, n-1 $
 
 **三次样条插值函数**： $S_i(x)=a_i(x-x_i)^3+b_i(x-x_i)^2+c_I(x-x_i)+d_i, x\in [x_i, x_{i+1}] $
