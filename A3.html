@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A3 Paper Simulation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css"
+    />
+    <style>
+      @media print {
+        @page {
+          size: A3;
+        }
+      }
+      .a3-paper {
+        column-count: 2;
+        column-gap: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="a3-paper bg-white shadow-lg overflow-hidden"
+      id="container"
+    ></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.js"></script>
+    <script src="./js/index.umd.js"></script>
+    <script>
+      const options = {
+        throwOnError: false,
+      };
+
+      marked.use(markedKatex(options));
+
+      function fetchAndInsertFormula(id, file) {
+        fetch(file)
+          .then((response) => response.text())
+          .then((data) => {
+            const formulaElement = document.createElement("div");
+            formulaElement.id = id;
+            formulaElement.innerHTML = marked.parse(data);
+            document.getElementById("container").appendChild(formulaElement);
+            //添加<hr>
+            const hr = document.createElement("hr");
+            document.getElementById("container").appendChild(hr);
+          })
+          .catch((error) => console.error("Error:", error));
+      }
+      arr = [1, 2, 3, 4, 5, 6, 7, 9];
+      for (let i = 0; i < arr.length; i++) {
+        fetchAndInsertFormula(`formula${arr[i]}`, `./${arr[i]}/index.md`);
+      }
+    </script>
+  </body>
+</html>

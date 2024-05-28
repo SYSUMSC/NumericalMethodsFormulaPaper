@@ -1,6 +1,6 @@
-### **第四章 数值积分微分**
+# **第四章 数值积分微分**
 
-#### **数值积分**
+## **数值积分**
 
 **左矩形公式** $I \approx \left(b-a\right) f(a) $
 
@@ -54,7 +54,7 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
 **高斯-赫尔米特求积公式** $\displaystyle \int_{-\infin}^{\infin}e^{-x^2}*f(x)\mathrm{d}x\approx\sum_{k=0}^{n}A_{k}f(x_{k}).$ 其中 $x_k$ 为赫尔米特多项式的零点
 
-#### **数值微分**
+## **数值微分**
 
 **向前差商公式** $f'(x)\approx\displaystyle  \frac{f(x+h)-f(x)}h$
 

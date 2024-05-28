@@ -1,4 +1,4 @@
-### **第三章 逼近与拟合**
+## **第三章 逼近与拟合**
 
 **范数**：设 $S$ 是实数域上的线性空间， $x\in S$ ，如果存在值域为实数域的函数 $\Vert\cdot\Vert$ ，满足：
 
@@ -124,24 +124,25 @@ $$
 
 下面给出由不同的权函数，得到的不同正交多项式：
 
-$$
-\begin{align*}
-&Legendre多项式,t\in [-1, 1],& &\ \rho(t)=1 \\
-&P_0(t)=1, P_1(t)=t, & &(k+1)P_{k+1}(t)=(2k+1) tP_k(t)-kP_{k-1}(t) \\
-\\
-&Chebyshev多项式1,t\in [-1, 1],& &\ \rho(t)=\frac{1}{\sqrt{1-t^2}} \\
-&P_0(t)=1, P_1(t)=t,& &P_{k+1}(t)=2tP_k(t)-P_{k-1}(t) \\
-\\
-&Chebyshev多项式2,[-1, 1],& &\ \rho(t)=\sqrt{1-t^2} \\
-&P_0(t)=1, P_1(t)=2t,& &P_{k+1}(t)=2tP_k(t)-P_{k-1}(t) \\
-\\
-&Laguerre多项式,[0, \infin),& &\ \rho(t)=e^{-t} \\
-&P_0(t)=1, P_1(t)=1-t,& &P_{k+1}(t)=(2k+1-t)P_k(t)-k^2P_{k-1}(t) \\
-\\
-&Hermite多项式,(-\infin, \infin),& &\ \rho(t)=e^{-t^2} \\
-&P_0(t)=1, P_1(t)=2t,& &P_{k+1}(t)=2tP_k(t)-2kP_{k-1}(t)
-\end{align*}
-$$
+**Legendre 多项式**，$t \in [-1, 1]$，$\rho(t)=1$
+
+$ P_0(t)=1, \quad P_1(t)=t, \quad (k+1)P_{k+1}(t)=(2k+1) tP_k(t)-kP_{k-1}(t) $
+
+**Chebyshev 多项式1**，$t \in [-1, 1]$，$\rho(t)=\frac{1}{\sqrt{1-t^2}}$
+
+$ P_0(t)=1, \quad P_1(t)=t, \quad P_{k+1}(t)=2tP_k(t)-P_{k-1}(t) $
+
+**Chebyshev 多项式2**，$t \in [-1, 1]$，$\rho(t)=\sqrt{1-t^2}$
+
+$ P_0(t)=1, \quad P_1(t)=2t, \quad P_{k+1}(t)=2tP_k(t)-P_{k-1}(t) $
+
+**Laguerre 多项式**，$t \in [0, \infty)$，$\rho(t)=e^{-t}$
+
+$ P_0(t)=1, \quad P_1(t)=1-t, \quad P_{k+1}(t)=(2k+1-t)P_k(t)-k^2P_{k-1}(t) $
+
+**Hermite 多项式**，$t \in (-\infty, \infty)$，$\rho(t)=e^{-t^2}$
+
+$ P_0(t)=1, \quad P_1(t)=2t, \quad P_{k+1}(t)=2tP_k(t)-2kP_{k-1}(t) $
 
 如果拟合的时候，用的是正交多项式 $\{p_i(x)\}$ ，可以直接写出最佳平方逼近函数 $S^*(x)=\displaystyle \sum_{k=0}^{n}\frac{<f(x), p_k(x)>}{<p_k(x), p_k(x)>}p_k(x)$，注意此时的积分区域为定义域，非定义域需做出相应变换
 

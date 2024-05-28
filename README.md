@@ -2,15 +2,15 @@
 
 用于数值计算课程的公式纸，由于本人不会latex，于是用html+css实现分栏，读取markdown合并，再用浏览器的打印功能导出A3即可
 
-在线预览网页：https://nmfp.skyw.cc/test.html
+在线预览网页：https://nmfp.skyw.cc/A3.html
 
-实测目前edge浏览器纵向+A3+缩放44%可以打印到两页，欢迎前端大佬提交更好的前端页面与打印格式~
+实测目前edge浏览器选择一页打印两页，欢迎前端大佬提交更好的前端页面与打印格式~
 
-## DDL
+# DDL
 
 15周6月3号
 
-## 本地开发指南
+# 本地开发指南
 
 `fork`本项目，`git clone`到本地
 
@@ -42,7 +42,7 @@
 
 完成后提交 pr 即可合并 https://github.com/xy3xy3/NumericalMethodsFormulaPaper/pulls 
 
-## 后期如何调整打印到双面A3?
+# 后期如何调整打印到双面A3?
 
 目前想法是先完成所有笔记，再调整每栏放什么，具体可参考`bootstarp栅格系统`
 
@@ -59,11 +59,11 @@ https://www.sysumsc.cn/
 
 # 辅助工具
 
-## 图片转latex
+# 图片转latex
 
 https://simpletex.cn/
 
-## pdf资源下载
+# pdf资源下载
 
 用于识别出latex公式
 
