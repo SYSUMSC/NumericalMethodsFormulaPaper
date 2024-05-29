@@ -6,11 +6,11 @@ $\mid x_k-x^*\mid\leq(b_k-a_k)/2=(b-a)/2^{k+1}\quad (k=0,1,2\dots)$
 
 **不动点的存在性与迭代法的收敛性**
 
-设迭代函数$\phi(x)\in C[a,b]$ ,并且
+设迭代函数 $\phi(x)\in C[a,b]$ ,并且
 
 (1) $\forall x\in [ a, b]$ ,都有 $\phi(x)\in[a,b]$
 
-(2) $\exists0\leq L<1$ , 使得 $\forall x,y\in[a,b]$ ,都有$\mid\phi(x)-\phi(y)\mid\leq L\mid x-y\mid$
+(2) $\exists0\leq L<1$ , 使得 $\forall x,y\in[a,b]$ ,都有 $\mid\phi(x)-\phi(y)\mid\leq L\mid x-y\mid$
 
 那么 $\phi(x)$ 在 $[a,b]$ 上存在唯一的不动点 $x^*$
 
@@ -22,11 +22,11 @@ $\mid x_k-x^*\mid\leq(b_k-a_k)/2=(b-a)/2^{k+1}\quad (k=0,1,2\dots)$
 
 **局部收敛性**
 
-设$x^*$为迭代函数 $\phi(x)$的不动点，$\phi^\prime(x)$在$x^*$ 的某邻域内连续，且$\mid\phi^{\prime}(x^{*})\mid<1$,则迭代法是局部收敛的.
+设 $x^*$ 为迭代函数 $\phi(x)$ 的不动点， $\phi^\prime(x)$ 在 $x^*$ 的某邻域内连续，且 $\mid\phi^{\prime}(x^{*})\mid<1$ ,则迭代法是局部收敛的.
 
 **收敛阶**
 
-误差 $e_k=x_k-x^*$ , 若 $\lim_{k\to\infty}\frac{e_{k+1}}{e_k^p}=C$ , $C\ne 0$ , 则称迭代过程为 $p$ 阶
+误差 $e_k=x_k-x^*$ , 若 $\lim_{k\to\infty}e_{k+1}/e_k^p=C$ , $C\ne 0$ , 则称迭代过程为 $p$ 阶
 
 如果 $\phi^{\prime}(x^*)=\phi^{\prime\prime}(x^*)=\cdots=\phi^{(p-1)}(x^*)=0,\quad\phi^{(p)}(x^*)\neq0$ ,那么迭代过程在 $x^*$ 附近是 $p$ 阶收敛的
 
