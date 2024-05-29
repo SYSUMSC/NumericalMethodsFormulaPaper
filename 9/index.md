@@ -20,55 +20,55 @@ y_{n+1}&=\frac{y_p+y_c}{2}
 \right.
 $$
 
-**中点公式**
+**r 级显式龙格-库塔公式**
 
 $$
-\begin{cases}
-y_{n+1}=y_n+hK_2 \\
-K_1=f(x_n,y_n) \\
-K_2=f(x_n+\frac{h}{2},y_n+\frac{h}{2}K_1)
-\end{cases}
+\left\{
+\begin{align*}
+&y_{n+1}=y_n+h\phi(x_n, y_n, h)=y_n+h\sum_{i=1}^r c_i K_i \\
+&K_1=f(x_n,y_n) \\
+&K_i=f(x_n+\lambda_i h,y_n+h\sum_{j=1}^{i-1} \mu_{ij} K_j), \quad i=2,\ldots,r
+\end{align*}
+\right.
 $$
 
-**通式显式龙格-库塔法**
+**二阶 R-K 公式（中点公式）**
 
 $$
-\begin{cases}
-\phi(x_n,y_n,h)=\sum_{i=1}^r c_i K_i \\
-K_1=f(x_n,y_n) \\
-K_i=f(x_n+\lambda_i h,y_n+h\sum_{j=1}^{i-1} \mu_{ij} K_j), \quad i=2,\ldots,r
-\end{cases}
+\left\{
+\begin{align*}
+&y_{n+1}=y_n+hK_2 \\
+&K_1=f(x_n,y_n) \\
+&K_2=f(x_n+\frac{h}{2},y_n+\frac{h}{2}K_1)
+\end{align*}
+\right.
 $$
 
-**二阶**
+**三阶 R-K 公式（库塔公式）**
 
 $$
-\begin{cases}
-y_{n+1}=y_n+h(c_1 K_1 + c_2 K_2) \\
-K_1=f(x_n,y_n) \\
-K_2=f(x_n+\lambda_2 h, y_n+\mu_{21} h K_1)
-\end{cases}
+\left\{
+\begin{align*}
+&y_{n+1}=y_n+\frac{h}{6}(K_1+4K_2+K_3),\\
+&K_1=f(x_n,y_n)\\
+&K_2=f\Big(x_n+\frac{h}{2},y_n+\frac{h}{2}K_1\Big)\\
+&K_3=f(x_n+h,y_n-hK_1+2hK_2)
+\end{align*}
+\right.
 $$
 
-**三阶常见公式**
+**四阶 R-K 公式**
 
 $$
-\begin{cases}y_{n+1}=y_n+\frac{h}{6}(K_1+4K_2+K_3),\\
-K_1=f(x_n,y_n),\\
-K_2=f\Big(x_n+\frac{h}{2},y_n+\frac{h}{2}K_1\Big),\\
-K_3=f(x_n+h,y_n-hK_1+2hK_2).\end{cases}
-$$
-
-**四阶经典公式**
-
-$$
-\begin{cases}
-y_{n+1}=y_n+\frac{h}{6}(K_1+2K_2+2K_3+K_4) \\
-K_1=f(x_n,y_n) \\
-K_2=f(x_n+\frac{h}{2}, y_n+\frac{h}{2} K_1) \\
-K_3=f(x_n+\frac{h}{2}, y_n+\frac{h}{2} K_2) \\
-K_4=f(x_n+h, y_n+h K_3)
-\end{cases}
+\left\{
+\begin{align*}
+&y_{n+1}=y_n+\frac{h}{6}(K_1+2K_2+2K_3+K_4) \\
+&K_1=f(x_n,y_n) \\
+&K_2=f(x_n+\frac{h}{2}, y_n+\frac{h}{2} K_1) \\
+&K_3=f(x_n+\frac{h}{2}, y_n+\frac{h}{2} K_2) \\
+&K_4=f(x_n+h, y_n+h K_3)
+\end{align*}
+\right.
 $$
 
 ## 线性多步法
