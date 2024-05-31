@@ -9,7 +9,7 @@
 
 就称 $\Vert\cdot\Vert$ 是线性空间 $S$ 上的范数， $S$ 与 $\Vert\cdot \Vert$ 一起称为**赋范线性空间**，记为 $X$
 
-对于 $\mathsf{R}^n$ 上的向量 $x=(x_1,\cdots,x_n)^T$ ，三种常用范数：
+对于 $R^n$ 上的向量 $ \mathbf{x}=(x_1,\cdots,x_n)^T$ ，三种常用范数：
 
 **无穷范数** $\Vert \mathbf{x} \Vert_\infin=\displaystyle \max_{1\leqslant i\leqslant n}|x_i|$
 
@@ -34,10 +34,10 @@
 
 **函数范数**： $\Vert f\Vert_2=\sqrt{\displaystyle \int_a^b \rho(x)f^2(x)dx}$
 
-若 $X$ 是一个内积空间， $u_i\in X$ ，称矩阵：
+若 $X$ 是一个内积空间， $u_i\in X$ ，称**Gram 矩阵**为：
 
 $$
-G=\begin{bmatrix}
+\mathbf{G}=\begin{bmatrix}
 (u_1, u_1) & (u_2, u_1) & \cdots & (u_n, u_1) \\
 (u_1, u_2) & (u_2, u_2) & \cdots & (u_n, u_2) \\
 \vdots & \vdots & \ddots & \vdots \\
@@ -45,13 +45,11 @@ G=\begin{bmatrix}
 \end{bmatrix}
 $$
 
-为**Gram 矩阵**。
-
-则 Gram 矩阵非奇异的充要条件是 $u_1, u_2, \dots, u_n$ 线性无关
+Gram 矩阵非奇异的充要条件是 $u_1, u_2, \dots, u_n$ 线性无关
 
 **最佳平方逼近函数**： $S^{*}(x)=\displaystyle \sum_{j=0}^{n}a_j\phi_j(x)$
 
-$\phi=span\\{\phi_0(x), \phi_1(x), \dots, \phi_n(x)\\}$ 是 $C[a, b]$ 中的一个子集
+$\phi=span\{\phi_0(x), \phi_1(x), \dots, \phi_n(x)\}$ 是 $C[a, b]$ 中的一个子集
 
 系数由称为**法方程**的线性方程组确定：
 
@@ -128,7 +126,7 @@ $$
 
 $ P_0(t)=1, \quad P_1(t)=t, \quad (k+1)P_{k+1}(t)=(2k+1) tP_k(t)-kP_{k-1}(t) $
 
-**Chebyshev 多项式1**，$t \in [-1, 1]$，$\rho(t)=\frac{1}{\sqrt{1-t^2}}$
+**Chebyshev 多项式1**，$t \in [-1, 1]$，$\rho(t)=\displaystyle \frac{1}{\sqrt{1-t^2}}$
 
 $ P_0(t)=1, \quad P_1(t)=t, \quad P_{k+1}(t)=2tP_k(t)-P_{k-1}(t) $
 
@@ -144,8 +142,8 @@ $ P_0(t)=1, \quad P_1(t)=1-t, \quad P_{k+1}(t)=(2k+1-t)P_k(t)-k^2P_{k-1}(t) $
 
 $ P_0(t)=1, \quad P_1(t)=2t, \quad P_{k+1}(t)=2tP_k(t)-2kP_{k-1}(t) $
 
-如果拟合的时候，用的是正交多项式 $\{p_i(x)\}$ ，可以直接写出最佳平方逼近函数 $S^*(x)=\displaystyle \sum_{k=0}^{n}\frac{<f(x), p_k(x)>}{<p_k(x), p_k(x)>}p_k(x)$，注意此时的积分区域为定义域，非定义域需做出相应变换
+如果拟合的时候，用的是正交多项式 $\{p_i(x)\}$ ，可以直接写出最佳平方逼近函数 $S^*(x)=\displaystyle \sum_{k=0}^{n}\frac{ (f, p_k)}{(p_k, p_k)}p_k(x)$，注意此时的积分区域为定义域，非定义域需做出相应变换
 
 对于一般的积分，有： $\displaystyle \int_a^b P(s)ds= \frac{b-a}{2}\int_{-1}^{1} P(t) dt,\ s=\frac{b-a}{2}+\frac{b+a}{2}$
 
-对于 Legendre 多项式，有： $\displaystyle \int_{-1}^1 P_j(t)P_k(t)dt =\frac{2}{2k+1},\ j\neq k$
+对于 Legendre 多项式，有： $\displaystyle \int_{-1}^1 P_j(t)P_k(t)dt =\frac{2}{2k+1},\ j= k$

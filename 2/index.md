@@ -19,7 +19,7 @@ f(x_0) \\ f(x_1) \\ f(x_2) \\ \vdots \\ f(x_n)
 \end{bmatrix}
 $$
 
-$x_i$ 互异 -> $\mathrm{det}\boldsymbol{A}\not=0$ -> 线性方程解唯一 -> $P(x)$ 存在则唯一
+$x_i$ 互异 $\Rightarrow$ $\mathrm{det}\boldsymbol{A}\not=0$ $\Rightarrow$ 线性方程解唯一 $\Rightarrow$ $P(x)$ 存在则唯一
 
 **拉格朗日插值**： $L_n(x)=\displaystyle \sum_{k=0}^{n}y_kl_k(x) $
 
@@ -86,4 +86,4 @@ $f[x_0, x_1, \dots, x_n]=\displaystyle \frac{f^{(n)}(\xi)}{n!},\xi\in[a, b] $
 - $c_i=\displaystyle \frac{y_{i+1}-y_i}{h}-\frac{(M_{i+1}+2M_i)h}{6} $
 - $d_i=y_i $
 
-其中 $M_i$ 根据条件解线性方程组得到： $M_i+4M_{i+1}+M_{i+2}=\displaystyle \frac{6(y_i-2y_{i+1}+y\_{i+2})}{h^2}, 1\leqslant i\leqslant n-2 $
+其中 $M_i$ 根据条件解线性方程组得到： $M_i+4M_{i+1}+M_{i+2}=\displaystyle \frac{6(y_i-2y_{i+1}+y_{i+2})}{h^2}, 1\leqslant i\leqslant n-2 $

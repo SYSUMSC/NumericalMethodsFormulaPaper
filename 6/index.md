@@ -8,7 +8,7 @@
 
 迭代法收敛充要条件： $\lim_{k\to\infty}B^k=0$ 或 $\rho (B)<1$ ,其中 $\rho (B)$ 称为矩阵B的谱半径
 
-设n维矩阵B的n个特征值为 $\lambda_1,\lambda_2,\ldots,\lambda_n$ , $\rho(B)=\max_{1\leq i\leq n}\lvert\lambda_i\rvert $
+设n维矩阵B的n个特征值为 $\lambda_1,\lambda_2,\ldots,\lambda_n$ , $\rho(B)=\displaystyle \max_{1\leq i\leq n}\lvert\lambda_i\rvert $
 
 **一阶线性定常迭代法**
 取 $\mathbf{M=I}$ 时，若 $\rho(\mathbf{B})<1$ ，则对任意初始向量 $\mathbf{x^{(0)}}=(x_1^{(0)}, x_2^{(0)}, \dots, x_n^{(0)})^T$，会收敛到真实解
@@ -55,8 +55,7 @@ $$
 对于 $x^{(k+1)}=Bx^{(k)}+f$ 如果有 $B$ 的某种算子范数 $\|B\|=q<1$ ,则
 1. 迭代法全局收敛
 2. $\begin{Vmatrix}x^*-x^{(k)}\end{Vmatrix}\leq q^k\begin{Vmatrix}x^*-x^{(0)}\end{Vmatrix}$
-3. $\left\|x^*-x^{(k)}\right\|\leq\frac q{1-q}\left\|x^{(k)}-x^{(k-1)}\right\|$
-4. $\begin{Vmatrix}x^*-x^{(k)}\end{Vmatrix}\leq\dfrac{q^k}{1-q}\begin{Vmatrix}x^{(1)}-x^{(0)}\end{Vmatrix}$
+3. $\begin{Vmatrix}x^*-x^{(k)}\end{Vmatrix}\leq\dfrac{q^k}{1-q}\begin{Vmatrix}x^{(1)}-x^{(0)}\end{Vmatrix}$
 
 **严格对角占优矩阵**
 
