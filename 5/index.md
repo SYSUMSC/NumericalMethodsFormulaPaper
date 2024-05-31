@@ -69,4 +69,6 @@ Cholesky 分解后，类似 LU 分解的过程得到最终解
 
 - **F-范数**：$\Vert \mathbf{A}\Vert_F=\displaystyle \sqrt{\sum_{i=1}^n\sum_{j=1}^n a_{ij}^2}$
 
-**谱半径** $\rho(\mathbf{A})=\max|\lambda_i|$，对矩阵的任何一种相容范数都有 $\rho(\mathbf{A})\leqslant \Vert \mathbf{A} \Vert$
+**谱半径** $\rho(\mathbf{A})=\max|\lambda_i|$，其中 $\lambda_i$ 是 $\mathbf{A}$ 的特征值
+
+对矩阵的任何一种相容范数都有 $\rho(\mathbf{A})\leqslant \Vert \mathbf{A} \Vert$
