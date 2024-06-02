@@ -30,11 +30,7 @@ $|x_k-x^*|\leqslant\displaystyle \frac{L^k}{1-L}| x_1-x_0 | $ 或 $|x_{k}-x^{*}|
 
 如果迭代函数在不动点 $x^*$ 附近有 $p$ 阶连续导数且 $\phi^{\prime}(x^*)=\phi^{\prime\prime}(x^*)=\cdots=\phi^{(p-1)}(x^*)=0,\quad\phi^{(p)}(x^*)\neq0$ ,那么迭代过程在 $x^*$ 附近 $p$ 阶收敛
 
-**斯特芬森迭代法**：
-
-$$
-x_{k+1}=\psi(x_k),\psi(x)=x-\frac{[\phi(x)-x]^2}{\phi(\phi(x))-2\phi(x)+x}
-$$
+**斯特芬森迭代法**： $x_{k+1}=\psi(x_k),\psi(x)=x-\frac{[\phi(x)-x]^2}{\phi(\phi(x))-2\phi(x)+x}$
 
 **牛顿法**： $x_{k+1}=\displaystyle x_k-\frac{f(x_k)}{f'(x_k)}$
 
