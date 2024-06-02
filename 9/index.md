@@ -83,7 +83,7 @@ $$
 
 **线性多步法**： $ y_{n+k}=\displaystyle \sum_{i=0}^{k-1}\alpha_i y_{n+i}+h\sum_{i=0}^k\beta_i f_{n+i}, f_{n+i}=f(x_{n+i}, y_{n+i}) $
 
-$\beta_k \neq 0$ 隐式 $k$步法；否则为显示多步法
+$\beta_k \neq 0$ 隐式 $k$ 步法；否则为显示多步法
 
 **局部截断误差**： $ T_{n+k}=c_{p+1}h^{p+1}y^{(p+1)}(x_n)+O(h^{p+2}) $
 

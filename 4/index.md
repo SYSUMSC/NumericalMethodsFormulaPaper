@@ -2,35 +2,33 @@
 
 ## **数值积分**
 
-**左矩形公式** $I \approx \left(b-a\right) f(a) $
-
-**右矩形公式** $I \approx \left(b-a\right) f(b) $
+**左矩形公式** $I \approx \left(b-a\right) f(a) $  **右矩形公式** $I \approx \left(b-a\right) f(b) $
 
 **中点矩形公式** $I \approx \left(b-a\right) \displaystyle f\left(\frac{a+b}{2}\right) $
 
 **插值型求积公式** $I\approx I_n = \displaystyle \int_a^b L_n(x)dx=\sum_{k=0}^n A_k f(x_k)$ , 其中 $\displaystyle A_k=\int_a^b l_k(x)dx$ 
 
-余项 $\displaystyle R[f]=\int_a^b\frac{f^{(n+1)}(\xi)}{(n+1)!}\omega_{n+1}(x)dx$
+余项 $\displaystyle R[f]=\int_a^b\frac{f^{(n+1)}(\xi)}{(n+1)!}\omega_{n+1}(x)dx$ ，至少有n次代数精度
+
+形如 $I_n=\sum^{n}A_kf(x_k)$ 的积分公式至少有 $n$ 次代数精度的充要条件是：它是插值型的
 
 **牛顿-柯特斯公式**:  $I\approx I_{n}=\displaystyle (b-a)\sum_{k=0}^{n}\mathbf{C}_{k}^{(n)}f(x_{k})$
 
 其中 $h=\displaystyle \frac{b-a}n, x_k=a+kh$
 
+若n为偶数，则n阶N-C公式至少有n+1次代数精度
+
 **柯特斯系数**： $\mathbf{C}_{k}^{(n)}=\displaystyle \frac{(-1)^{n-k}}{k!(n-k)!\cdot n}\int_{0}^{n}\prod_{j=0,j\neq k}^{n}(t-j)dt $
 
 $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
-**梯形公式** $I_1=\displaystyle \frac{b-a}{2}[f(a)+f(b)]$ 
-
-余项 $R[f]=\displaystyle -\frac{(b-a)^3}{12}f''(\eta)$
+**梯形公式** $I_1=\displaystyle \frac{b-a}{2}[f(a)+f(b)]$  余项 $R[f]=\displaystyle -\frac{(b-a)^3}{12}f''(\eta)$
 
 **辛普森公式** $I_2=\displaystyle\frac{b-a}{6}[f(a)+4f(\frac{a+b}2)+f(b)]$ 
 
 余项 $R[f]=\displaystyle-\frac{(b-a)^5}{2880}f^{(4)}(\eta)$
 
-**柯特斯公式** $I_4=\displaystyle\frac{b-a}{90}[7f(x_0)+32f(x_1)+12f(x_2)+32f(x_3)+7f(x_4)]$
-
-误差 $R[f]=\displaystyle -\frac{(b-a)^7}{1935360}f^{(6)}(\eta), \eta\in(a, b)$
+**柯特斯公式** $I_4=\displaystyle\frac{b-a}{90}[7f(x_0)+32f(x_1)+12f(x_2)+32f(x_3)+7f(x_4)]$ 误差 $R[f]=\displaystyle -\frac{(b-a)^7}{1935360}f^{(6)}(\eta), \eta\in(a, b)$
 
 **复化的梯形公式** $I\approx T_n = \displaystyle \frac h2[f(a)+2\sum_{k=1}^{n-1}f(x_k)+f(b)]$
 
@@ -56,18 +54,11 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
 ## **数值微分**
 
-**向前差商公式** $f'(x)\approx\displaystyle  \frac{f(x+h)-f(x)}h$
+**向前差商公式** $f'(x)\approx\displaystyle  \frac{f(x+h)-f(x)}h$ 误差： $\displaystyle-\frac h2 f''(\xi)$
 
+**向后差商公式** $f'(x)\approx\displaystyle \frac{f(x)-f(x-h)}h$ 误差： $\displaystyle\frac h2 f''(\xi)$
 
-误差： $\displaystyle-\frac h2 f''(\xi)$
-
-**向后差商公式** $f'(x)\approx\displaystyle \frac{f(x)-f(x-h)}h$
-
-误差： $\displaystyle\frac h2 f''(\xi)$
-
-**中心差商公式** $f'(x)\approx\displaystyle \frac{f(x+h)-f(x-h)}{2h}$
-
-误差： $\displaystyle-\frac{h^2}6f'''(\xi)$
+**中心差商公式** $f'(x)\approx\displaystyle \frac{f(x+h)-f(x-h)}{2h}$ 误差： $\displaystyle-\frac{h^2}6f'''(\xi)$
 
 **舍入误差上界** $\delta(f'(a))=\displaystyle f'(a)-G(a)\leqslant\frac{|\varepsilon_1|+|\varepsilon_2|}{2h}\leqslant\frac{\varepsilon}{h}$ , $\varepsilon=\max\{|\varepsilon_{1}|,|\varepsilon_{2}|\}$
 

@@ -81,9 +81,8 @@ $f[x_0, x_1, \dots, x_n]=\displaystyle \frac{f^{(n)}(\xi)}{n!},\xi\in[a, b] $
 
 记 $h$ 为小区间长度， $M_i=S''(x_i), y_i=f(x_i)$ ，在区间 $[x_i, x_{i+1}]$ 上的 $S(x)$ 为
 
-- $a_i=\displaystyle \frac{M_{i+1}-M_i}{6h} $
-- $b_i=\displaystyle \frac{M_i}{2} $
-- $c_i=\displaystyle \frac{y_{i+1}-y_i}{h}-\frac{(M_{i+1}+2M_i)h}{6} $
-- $d_i=y_i $
+$a_i=\displaystyle \frac{M_{i+1}-M_i}{6h} $ ， $b_i=\displaystyle \frac{M_i}{2} $
+
+$c_i=\displaystyle \frac{y_{i+1}-y_i}{h}-\frac{(M_{i+1}+2M_i)h}{6} $ ， $d_i=y_i $
 
 其中 $M_i$ 根据条件解线性方程组得到： $M_i+4M_{i+1}+M_{i+2}=\displaystyle \frac{6(y_i-2y_{i+1}+y_{i+2})}{h^2}, 1\leqslant i\leqslant n-2 $

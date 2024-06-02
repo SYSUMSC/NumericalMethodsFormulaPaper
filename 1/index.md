@@ -2,9 +2,7 @@
 
 记 $x^*$ 为准确值， $x$ 为 $x^*$ 的一个近似值
 
-**绝对误差** $e_p = |x - x^*| $
-
-**相对误差** $e_r = \displaystyle \left|\frac{x-x^*}{x}\right| $
+**绝对误差** $e_p = |x - x^*| $  **相对误差** $e_r = \displaystyle \left|\frac{x-x^*}{x}\right| $
 
 **相对误差限** $\displaystyle\varepsilon_r=\frac{\varepsilon}{\mid x\mid}\geqslant\frac{\mid x-x^*\mid}{\mid x\mid}=\mid e*{\mathrm{r}}\mid $
 
@@ -30,6 +28,4 @@ $C_p\geqslant 10$ 就认为问题是病态的
 
 **Horner's Method(秦九韶算法)**
 
-$P_n(x)=\displaystyle\sum_{i=0}^na_ix^i$ ，求 $P(x_0)$ 只需求 $b_n$
-
-其中 $ b_0=a_0,b_k=a_k+b_{k-1}x $
+$P_n(x)=\displaystyle\sum_{i=0}^na_ix^i$ ，求 $P(x_0)$ 只需求 $b_n$ 其中 $ b_0=a_0,b_k=a_k+b_{k-1}x $

@@ -13,9 +13,7 @@
 
 **无穷范数** $\Vert \mathbf{x} \Vert_\infin=\displaystyle \max_{1\leqslant i\leqslant n}|x_i|$
 
-**1-范数** $\Vert \mathbf{x} \Vert_1=\displaystyle \sum_{i=1}^n|x_i|$
-
-**2-范数**： $\Vert \mathbf{x} \Vert_2=\displaystyle \sqrt{\sum_{i=1}^n x_i^2}$
+**1-范数** $\Vert \mathbf{x} \Vert_1=\displaystyle \sum_{i=1}^n|x_i|$  **2-范数**： $\Vert \mathbf{x} \Vert_2=\displaystyle \sqrt{\sum_{i=1}^n x_i^2}$
 
 **内积**：设 $X$ 是数域 $K$ 上的线性空间， $\forall u, v\in X$ 。有 $K$ 中的一个数与其对应，记为 $(u, v)$ ，其满足：
 
