@@ -28,11 +28,10 @@ $C_p\geqslant 10$ 就认为问题是病态的
 
 **秦九韶算法**
 
-<<<<<<< HEAD
+
 $p(x)=a_0x^n+a_1x^{n-1}+\cdotp\cdotp\cdotp+a_{n-1}x+a_n=(\cdots(a_0x+a_1)x+\cdots+a_{n-1})x+a_n  \quad a_0\neq0$ 
 
 $\begin{cases}b_0=a_0,\\b_i=b_{i-1}x^*+a_i,\quad i=1,2,\cdotp\cdotp\cdotp,n,\end{cases}$
 
 $b_{n}=p(x^{*})$ 为所求
-=======
->>>>>>> origin/master
+
