@@ -2,6 +2,8 @@
 
 用于数值计算课程的公式纸，由于本人不会latex，于是用html+css实现分栏，读取markdown合并，再用浏览器的打印功能导出A3即可
 
+[下载pdf](/paper.pdf)
+
 在线预览网页：https://nmfp.skyw.cc/A3.html
 
 实测目前edge浏览器选择一页打印两页，欢迎前端大佬提交更好的前端页面与打印格式~
