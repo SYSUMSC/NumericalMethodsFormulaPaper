@@ -27,8 +27,10 @@ $C_p\geqslant 10$ 就认为问题是病态的
 
 其相对误差限 $\displaystyle|\frac{x-x^*}x|\leqslant\varepsilon_r\leqslant\frac{10^{1-n}}{2a_1}$
 
-**Horner's Method(秦九韶算法)**
+**秦九韶算法**
 
-$P_n(x)=\displaystyle\sum_{i=0}^na_ix^i$ ，求 $P(x_0)$ 只需求 $b_n$ 
+$p(x)=a_0x^n+a_1x^{n-1}+\cdotp\cdotp\cdotp+a_{n-1}x+a_n=(\cdots(a_0x+a_1)x+\cdots+a_{n-1})x+a_n  \quad a_0\neq0$ 
 
-其中 $ b_0=a_0,b_k=a_k+b_{k-1}x $
+$\begin{cases}b_0=a_0,\\b_i=b_{i-1}x^*+a_i,\quad i=1,2,\cdotp\cdotp\cdotp,n,\end{cases}$
+
+$b_{n}=p(x^{*})$ 为所求
