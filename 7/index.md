@@ -36,13 +36,11 @@ $|x_k-x^*|\leqslant\displaystyle \frac{L^k}{1-L}| x_1-x_0 | $ 或 $|x_{k}-x^{*}|
 
 **简化牛顿法**： $x_{k+1}=\displaystyle x_k-\frac{f(x_k)}{f'(x_0)}$
 
-**牛顿下山法**： $x_{k+1}=\displaystyle x_k-\lambda\frac{f(x_k)}{f'(x_k)}$
+**牛顿下山法**： $x_{k+1}=\displaystyle x_k-\lambda\frac{f(x_k)}{f'(x_k)}$ 每一次迭代从 $\lambda=1$ 开始试算，不断令 $\lambda$ 减半直到满足 $|f(x_{k+1})|<|f(x_k)|$
 
-每一次迭代从 $\lambda=1$ 开始试算，不断令 $\lambda$ 减半直到满足 $|f(x_{k+1})|<|f(x_k)|$
+**重根情形下的牛顿法**：若 $f(x)=(x-x^*)^m h(x)$ 改为 $x_{k+1}=x_k-\displaystyle m\frac{f(x_k)}{f'(x_k)}$ ，仍然是平方收敛的
 
-**重根情形下的牛顿法**：若 $f(x)=(x-x^*)^m h(x)$
-
-改为 $x_{k+1}=x_k-\displaystyle m\frac{f(x_k)}{f'(x_k)}$ ，仍然是平方收敛的
+令 $\mu(x)=f(x)/f'(x)$ 对其用牛顿法得： $x_{k+1}=x_k-\frac{f(x_k)f'(x_k)}{\left[f'(x_k)\right]^2-f(x_k)f''(x_k)}$
 
 **单点弦截法（割线法）**：$x_{k+1}=x_k-\displaystyle \frac{f(x_k)}{f(x_k)-f(x_0)}(x_k-x_0)$
 
