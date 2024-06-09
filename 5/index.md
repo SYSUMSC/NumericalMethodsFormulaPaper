@@ -14,7 +14,7 @@ $$
 
 若 $a_{kk}^{(k)}\neq 0$ ，则 $\displaystyle x_n=({b_k^{(k)}-\sum_{j=k+1}^{n}a_{kj}^{(k)}x_j})/({a_{kk}^{(k)}})$
 
-**LU 分解**：高斯消元法的每一步初等变换相当于一个初等矩阵左乘原矩阵，最终得到一个上三角阵 $\mathbf{L_{n-1}\dots L_2L_1A=U}$
+**LU 分解**：(Doolittle)高斯消元法的每一步初等变换相当于一个初等矩阵左乘原矩阵，最终得到一个上三角阵 $\mathbf{L_{n-1}\dots L_2L_1A=U}$
 
 所以 $\mathbf{A=L_1^{-1}L_2^{-1}\dots L_{n-1}^{-1}U=LU}$ ，其中 $\mathbf{L}$ 是下三角阵：
 

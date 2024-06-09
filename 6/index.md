@@ -38,7 +38,7 @@ $$
 
 **逐次超松驰迭代法（SOR）**
 
-引入松弛因子 $\omega, \omega>0$ 采用矩阵分裂： $\displaystyle \mathbf{A=M-N}=\frac 1 \omega(\mathbf{D}-\omega\mathbf{L})-\frac 1 \omega[(1-\omega)\mathbf{D}+\omega\mathbf{U}]$
+引入松弛因子 $\omega, 0<\omega<2$ 采用矩阵分裂： $\displaystyle \mathbf{A=M-N}=\frac 1 \omega(\mathbf{D}-\omega\mathbf{L})-\frac 1 \omega[(1-\omega)\mathbf{D}+\omega\mathbf{U}]$
 
 则 $\mathbf{Dx^{(k+1)}=Dx^{(k)}}+\omega\mathbf{(b+Lx^{(k+1)}+Ux^{(k)}-Dx^{(k)})}$
 
@@ -52,7 +52,7 @@ $$
 
 **严格对角占优矩阵**
 
-满足条件 $\sum_{j=1}^n\left|a_{ij}\right|<\left|a_{ii}\right|\quad,\quad i=1,2,\cdots,n$ ，则称矩阵A是严格对角占优矩阵。
+满足条件 $\sum_{j=1,j\ne i}^n\left|a_{ij}\right|<\left|a_{ii}\right|\quad,\quad i=1,2,\cdots,n$ ，则称矩阵A是严格对角占优矩阵。
 
 雅可比迭代法和高斯-赛格尔迭代法都收敛
 

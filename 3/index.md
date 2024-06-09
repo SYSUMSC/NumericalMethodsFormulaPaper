@@ -142,6 +142,6 @@ $ P_0(t)=1, \quad P_1(t)=2t, \quad P_{k+1}(t)=2tP_k(t)-2kP_{k-1}(t) $
 
 如果拟合的时候，用的是正交多项式 $\{p_i(x)\}$ ，可以直接写出最佳平方逼近函数 $S^*(x)=\displaystyle \sum_{k=0}^{n}\frac{ (f, p_k)}{(p_k, p_k)}p_k(x)$，注意此时的积分区域为定义域，非定义域需做出相应变换
 
-对于一般的积分，有： $\displaystyle \int_a^b P(s)ds= \frac{b-a}{2}\int_{-1}^{1} P(t) dt,\ s=\frac{b-a}{2}+\frac{b+a}{2}$
+对于一般的积分，有： $\displaystyle \int_a^b P(s)ds= \frac{b-a}{2}\int_{-1}^{1} P(t) dt,\ s=\frac{b-a}{2}t+\frac{b+a}{2}$
 
 对于 Legendre 多项式，有： $\displaystyle \int_{-1}^1 P_j(t)P_k(t)dt =\frac{2}{2k+1},\ j= k$
