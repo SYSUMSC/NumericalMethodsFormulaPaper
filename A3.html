@@ -82,7 +82,10 @@
       }
       arr = [1, 2, 3, 4, 5, 6, 7, 9];
       for (let i = 0; i < arr.length; i++) {
-        fetchAndInsertFormula(`formula${arr[i]}`, `./${arr[i]}/index.md`);
+        //延迟0.1s
+        setTimeout(() => {
+          fetchAndInsertFormula(`formula${arr[i]}`, `./${arr[i]}/index.md`);
+        }, 100);
       }
     </script>
   </body>
