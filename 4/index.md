@@ -101,6 +101,10 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
 其中 $\varepsilon_1, \varepsilon_2$ 分别是 $f(a+h), f(a-h) $ 的舍入误差
 
+**3点前向** $f^{\prime}(x_i)\approx\frac{-f(x_{i+2})+4f(x_{i+1})-3f(x_i)}{x_{i+2}-x_i}$
+
+**3点后向** $f^{\prime}(x_i)\approx\frac{3f(x_i)-4f(x_{i-1})+f(x_{i-2})}{x_i-x_{i-2}}$
+
 **插值型求导公式**： $f'(x)=L_n'(x)$
 
 余项 $R[f']|_{x=x_k}=\displaystyle \frac{f^{(n+1)}(\xi)}{(n+1)!}\omega_{n+1}'(x_k)$
