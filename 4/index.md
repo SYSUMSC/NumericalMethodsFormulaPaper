@@ -103,7 +103,7 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
 **3点前向** $f^{\prime}(x_i)\approx\frac{-f(x_{i+2})+4f(x_{i+1})-3f(x_i)}{x_{i+2}-x_i}$
 
-**3点中间** $f'(x_i) \approx \frac{f(x_{i+1}) - f(x_{i-1})}{2(x_{i+1} - x_{i-1})}$
+**3点中间** $f'(x_i) \approx \frac{f(x_{i+1}) - f(x_{i-1})}{x_{i+1} - x_{i-1}}$
 
 **3点后向** $f^{\prime}(x_i)\approx\frac{3f(x_i)-4f(x_{i-1})+f(x_{i-2})}{x_i-x_{i-2}}$
 
