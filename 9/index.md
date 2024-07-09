@@ -10,7 +10,7 @@ $$
 \right.
 $$
 
-**利普希兹条件**： $ |f(x,y_1)-f(x,y_2)|\leqslant|y_1-y_2|, L>0 $
+**利普希兹条件**： $|f(x,y_1)-f(x,y_2)|\leqslant{L|y_1-y_2|}, L>0$
 
 **前向欧拉法**： $y_{n+1}=y_n+hf(x_n,y_n) $ ，局部截断误差 $T_{n+1}=\displaystyle \frac{h^2}{2}y''(x_n)+O(h^3)$
 
@@ -105,14 +105,14 @@ $\beta_k \neq 0$ 隐式 $k$ 步法；否则为显示多步法
 | 3   | 4   | $\displaystyle y_{n+3} = y_{n+2} + \frac{h}{24} (9f_{n+3} + 19f_{n+2} - 5f_{n+1} + f_n)$                      | $\displaystyle -\frac{19}{720}$ |
 | 4   | 5   | $\displaystyle y_{n+4} = y_{n+3} + \frac{h}{720} (251f_{n+4} + 646f_{n+3} - 264f_{n+2} + 106f_{n+1} - 19f_n)$ | $\displaystyle -\frac{3}{160}$  |
 
-**米尔尼方法** $y_{n+4}=\displaystyle y_{n}+\frac{4h}{3}(2f_{n+3}-f_{n+2}+2f_{n+1}) $ 
+**米尔尼方法** $y_{n+4}=\displaystyle y_{n}+\frac{4h}{3}(2f_{n+3}-f_{n+2}+2f_{n+1}) $
 
 局部截断误差 $ T_{n+4}=\displaystyle \frac{14}{45}h^5y^{(5)}(x_n)+O(h^6) $
 
-**辛普森方法** $y_{n+2}=\displaystyle y_n+\frac h 3 (f_n+4f_{n+1}+f_{n+2}).$ 
+**辛普森方法** $y_{n+2}=\displaystyle y_n+\frac h 3 (f_n+4f_{n+1}+f_{n+2}).$
 
 局部截断误差 $ T_{n+2}=\displaystyle -\frac{h^5}{90}y^{(5)}(x_n)+O(h^6). $
 
-**汉明方法** $y_{n+3}=\displaystyle \frac 1 8 (9y_{n+2}-y_n)+\frac{3h}8(f_{n+3}+2f_{n+2}-f_{n+1})$ 
+**汉明方法** $y_{n+3}=\displaystyle \frac 1 8 (9y_{n+2}-y_n)+\frac{3h}8(f_{n+3}+2f_{n+2}-f_{n+1})$
 
 局部截断误差 $ T_{n+3}=\displaystyle -\frac{h^5}{40}y^{(5)}(x_n)+O(h^6). $
