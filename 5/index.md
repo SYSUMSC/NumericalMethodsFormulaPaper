@@ -53,7 +53,7 @@ Cholesky 分解后，类似 LU 分解的过程得到最终解
 
 **矩阵范数**：如果矩阵 $\mathbf{A}\in R^{n\times n}$ 与某个非负的实值函数 $N(\mathbf{A})=\Vert\mathbf{A}\Vert$ 满足正定性、齐次性、三角不等式以及相容性，则称 $N(\mathbf{A})$ 是一个矩阵范数
 
-**相容性**：$\Vert \mathbf{Ax}\Vert\leqslant \Vert \mathbf{A}\Vert \Vert \mathbf{x}\Vert$。其中 $\Vert \mathbf{A}\Vert$ 矩阵范数， $\Vert \mathbf{Ax}\Vert, \Vert \mathbf{x}\Vert$ 是向量范数。只有满足这个不等式，才说这个矩阵范数和这个向量范数是相容的。
+**相容性**：$\Vert \mathbf{Ax}\Vert\leqslant \Vert \mathbf{A}\Vert \Vert \mathbf{x}\Vert$。其中 $\Vert \mathbf{A}\Vert$ 矩阵范数， $\Vert \mathbf{Ax}\Vert$ 、 $\Vert \mathbf{x}\Vert$ 是向量范数。只有满足这个不等式，才说这个矩阵范数和这个向量范数是相容的。
 
 **算子范数（从属矩阵范数）**：$\Vert \mathbf{A}\Vert =\displaystyle \max_{\Vert \mathbf{x}\Vert=1}\{\Vert\mathbf{Ax}\Vert\}=\max_{\mathbf{x\neq 0}}\frac{\Vert \mathbf{Ax\Vert}}{\Vert \mathbf{x} \Vert}$ ，其中 $\Vert\mathbf{Ax}\Vert$ 是某个向量范数。算子范数度量了矩阵 $\mathbf{A}$ 将向量 $\mathbf{x}$ 映射到新向量 $\mathbf{Ax}$ 的"放大"程度。
 

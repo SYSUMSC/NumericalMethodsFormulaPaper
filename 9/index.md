@@ -16,7 +16,7 @@ $$
 
 **后向欧拉法**： $y_{n+1}=y_n+hf(x_{n+1},y_{n+1})$ ，局部截断误差 $T_{n+1}=\displaystyle -\frac{h^2}{2}y''(x_n)+O(h^3)$
 
-**梯形方法**： $ y_{n+1}=y_n+\frac{h}{2}[f(x_n,y_n)+f(x_{n+1},y_{n+1})]$ ，局部截断误差 $T_{n+1}=\displaystyle -\frac{h^3}{12}y'''(x_n)+O(h^4)$
+**梯形方法**： $ y_{n+1}=\displaystyle y_n+\frac{h}{2}[f(x_n,y_n)+f(x_{n+1},y_{n+1})]$ ，局部截断误差 $T_{n+1}=\displaystyle -\frac{h^3}{12}y'''(x_n)+O(h^4)$
 
 **改进欧拉法（Heun 法）**
 

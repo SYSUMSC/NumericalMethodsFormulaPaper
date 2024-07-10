@@ -10,11 +10,11 @@ $| x_k-x^*|\leqslant(b_k-a_k)/2=(b-a)/2^{k+1}\quad (k=0,1,2\dots)$
 
 (1) $\forall x\in [ a, b]$ ,都有 $\phi(x)\in[a,b]$ 
 
-(2) $\exists0\leq L<1$ , 使得 $\forall x,y\in[a,b]$ ,都有 $|\phi(x)-\phi(y)|\leq L| x-y|$
+(2) $\exists0\leqslant L<1$ , 使得 $\forall x,y\in[a,b]$ ,都有 $|\phi(x)-\phi(y)|\leqslant L| x-y|$
 
 那么 $\phi(x)$ 在 $[a,b]$ 上存在唯一的不动点 $x^*$
 
-上述定理的第二个条件可用 $\left|\phi^{\prime}(x)\right|\leq L<1$ 代替。
+上述定理的第二个条件可用 $\left|\phi^{\prime}(x)\right|\leqslant L<1$ 代替。
 
 误差估计：
 

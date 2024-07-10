@@ -77,9 +77,9 @@ $f[x_0, x_1, \dots, x_n]=\displaystyle \frac{f^{(n)}(\xi)}{n!},\xi\in[a, b] $
 
 **分段线性插值**： $I_h(x)=\displaystyle \frac{x-x_{k+1}}{x_k-x_{k+1}}f(x_k)+\frac{x-x_k}{x_{k+1}-x_k}f(x_{k+1}) $, 其中 $x_k\leqslant x\leqslant x_{k+1}, k=0, 1,\dots, n-1 $
 
-**三次样条插值函数**： $S_i(x)=a_i(x-x_i)^3+b_i(x-x_i)^2+c_i(x-x_i)+d_i, x\in [x_i, x_{i+1}] $
+**三次样条插值函数**：记 $h$ 为小区间长度， $M_i=S''(x_i), y_i=f(x_i)$ 
 
-记 $h$ 为小区间长度， $M_i=S''(x_i), y_i=f(x_i)$ ，在区间 $[x_i, x_{i+1}]$ 上的 $S(x)$ 为
+设区间 $[x_i, x_{i+1}]$ 上的插值函数为 $S_i(x)=a_i(x-x_i)^3+b_i(x-x_i)^2+c_i(x-x_i)+d_i, x\in [x_i, x_{i+1}] $
 
 $a_i=\displaystyle \frac{M_{i+1}-M_i}{6h} $ ， $b_i=\displaystyle \frac{M_i}{2} $
 

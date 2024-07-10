@@ -24,7 +24,7 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
 **梯形公式** $I_1=\displaystyle \frac{b-a}{2}[f(a)+f(b)]$  余项 $R[f]=\displaystyle -\frac{(b-a)^3}{12}f''(\eta)$
 
-**辛普森公式** $I_2=\displaystyle\frac{b-a}{6}[f(a)+4f(\frac{a+b}2)+f(b)]$
+**辛普森公式** $I_2=\displaystyle\frac{b-a}{6}[f(a)+4f\left(\frac{a+b}2\right)+f(b)]$
 
 余项 $R[f]=\displaystyle-\frac{(b-a)^5}{2880}f^{(4)}(\eta)$
 
@@ -101,11 +101,11 @@ $\displaystyle \sum_{k=0}^n C_k^{(n)}=1$ 恒成立
 
 其中 $\varepsilon_1, \varepsilon_2$ 分别是 $f(a+h), f(a-h) $ 的舍入误差
 
-**3点前向** $f^{\prime}(x_i)\approx\frac{-f(x_{i+2})+4f(x_{i+1})-3f(x_i)}{x_{i+2}-x_i}$
+**三点前向** $f^{\prime}(x_i)\approx\displaystyle\frac{-f(x_{i+2})+4f(x_{i+1})-3f(x_i)}{x_{i+2}-x_i}$
 
-**3点中间** $f'(x_i) \approx \frac{f(x_{i+1}) - f(x_{i-1})}{x_{i+1} - x_{i-1}}$
+**三点中间** $f'(x_i) \approx \displaystyle\frac{f(x_{i+1}) - f(x_{i-1})}{x_{i+1} - x_{i-1}}$
 
-**3点后向** $f^{\prime}(x_i)\approx\frac{3f(x_i)-4f(x_{i-1})+f(x_{i-2})}{x_i-x_{i-2}}$
+**三点后向** $f^{\prime}(x_i)\approx\displaystyle\frac{3f(x_i)-4f(x_{i-1})+f(x_{i-2})}{x_i-x_{i-2}}$
 
 **插值型求导公式**： $f'(x)=L_n'(x)$
 
