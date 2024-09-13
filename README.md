@@ -1,6 +1,6 @@
 # 介绍
 
-用于数值计算课程的公式纸，由于本人不会latex，于是用html+css实现分栏，读取markdown合并，再用浏览器的打印功能导出A3即可
+用于中山大学SYSU 数值计算课程的公式纸，由于本人不会latex，于是用html+css实现分栏，读取markdown合并，再用浏览器的打印功能导出A3即可
 
 [下载pdf](/paper.pdf)
 
